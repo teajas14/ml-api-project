@@ -21,8 +21,12 @@ app = Flask(__name__)
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    data = request.json
-    target = data['target']
+    data = request.get_json()
+
+    if not data or "target" not in data:
+        return jsonify({"error": "Invalid input"}), 400
+
+    target = float(data["target"])
 
     prediction = model.predict([[target]])[0]
 

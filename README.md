@@ -12,14 +12,15 @@ Automation (UiPath)
 Data Processing (Excel)
 Machine Learning (Python)
 Cloud Deployment
+
 ⚙️ Tech Stack
 Python
 Flask
 Scikit-learn
 NumPy / Pandas
 Cloud Deployment (Render)
-🔗 Live API
 
+🔗 Live API
 👉 https://ml-api-project-g7i7.onrender.com
 
 📥 API Usage
@@ -55,8 +56,8 @@ Curl
 UiPath HTTP Request Activity
 ▶️ Run Locally
 1. Clone the repository
-git clone <YOUR_GITHUB_REPO_LINK>
-cd <REPO_NAME>
+git clone <https://github.com/teajas14/ml-api-project>
+cd <ml_api_project>
 2. Install dependencies
 pip install -r requirements.txt
 3. Run the server
